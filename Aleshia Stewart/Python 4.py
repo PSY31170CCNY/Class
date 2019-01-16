@@ -116,4 +116,9 @@ Traceback (most recent call last):
   File "E:/python 5.py", line 37, in <module>
     for line in x:
 NameError: name 'x' is not defined
+>>> ================================ RESTART ================================
+>>> 
+dearAleshia "stewart is this your correct email address? "sashagay456@yahoo.com
+dearthomas "james is this your correct email address? "tjames@gmail.com
+dearlisa thompson "thompson is this your correct email address? "tthompson@hotmail.com
 >>> 

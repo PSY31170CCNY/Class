@@ -32,7 +32,8 @@ while False: #True:
     
 
 ##"""
-
+e=open ("E:/namesandaddress.csv",'r')
+x=e.readlines ()
 ##>>>  x
 for line in x:
     y=line.split(',')
