@@ -19,7 +19,7 @@ while Rename:
 
 Data = str('"'+ A +'",'+'"'+ B +'",'+ C +'\n')
 
-e.open(Drive+Filename)
+
 e.writelines(Data)
 e.close()
 
