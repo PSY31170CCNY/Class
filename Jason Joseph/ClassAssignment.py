@@ -1,6 +1,6 @@
 #What is the need of the program that I am writing for this data?
-#Comparing the number of SAT scores in different schools in NYC
-#Which school had higher math scores?
+#Pull up different (Math, Reading, Writing) SAT scores in different schools in NYC
+#Calculate the total SAT score. 
 
 
 #SAT.csv
