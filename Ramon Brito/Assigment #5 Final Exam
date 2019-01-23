@@ -57,19 +57,18 @@ with at least 6 users' data and upload the file to your github Class folder:
 
 # finalexamproblem6.py
 # Asks user for their information and adds it to a text file 
-while True
-print(Enter your name,, address and phone, please)
-f = open(“textfile.txt”,’w’)
-name = 'input(Your name')
-addr = input’((Your address’)
-phone='input(Your phone)'
-f.writelines(name,add,phone)
-f.close()
-if name=":
-    break
-    
-    
-    
+    Answer:
+    while tru:
+    print ("enter your name, address, and phone please")
+    name= input ("Your name")
+    addr= input ("Your Address")
+    phone= input ("Your Phon")
+    entry= (name+addr+phone)
+    if name ==":
+    	     break
+    open(“textfile.txt”,’w’)
+    f.writelines (entry+'\n')
+    f.close()
     
     
     
