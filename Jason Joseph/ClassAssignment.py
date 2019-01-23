@@ -1,7 +1,7 @@
 #What is the need of the program that I am writing for this data?
 #Pull up different (Math, Reading, Writing) SAT scores in different schools in NYC
 #Calculate the total SAT score. 
-
+#File URL: https://data.cityofnewyork.us/Education/2012-SAT-Results/f9bf-2cp4
 
 #SAT.csv
 import csv
