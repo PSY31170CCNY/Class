@@ -1,4 +1,9 @@
-John,Greg,Bill
+#Assignment 3
+#Analyze a NYC database
+
+
+John,Greg,Bill
+
 ndustry	Sub Subindustry	Address	Phone	Website	Borough	Postcode	Latitude	Longitude	Community Board	Community Council 	Census Tract	BIN	BBL	NTA	Location 1
 Europa Cafe	Café / Deli		3 Times Sq	212-239-0160	www.euorpacafe.com	1	10036	40.756376	-73.986713	5	3	119	"1,024,686"	"1,010,140,033"	Midtown-Midtown South                                                      	"3 Times Sq
 (40.756376, -73.986713)"
