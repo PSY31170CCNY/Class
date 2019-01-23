@@ -14,4 +14,18 @@ with open ('/Users/sbodden000/Downloads/DHS_Daily_Report.csv') as csvfile:
 #Looking at the data following 1/1/2014 to 12/31/2018 in yearly incorements (Over a 5 year span)
 #Data from 1/1/2014 to 12/31/2014, Data from 1/1/2015 to 12/31/2015, Data from 1/1/2016 to 12/31/2016, Data from 1/1/2017 to 12/31/2017, Data from 1/1/2018 to 12/31/2018.
 
+uid=0
+DateofCensus=1 
+TotalAdultsinShelter=2
+TotalChildreninShelter=3
+TotalIndividualsinShelter=4
+SingleAdultMeninShelter=5
+SingleAdultWomeninShelter=6
+TotalSingleAdultsinShelter=7
+FamilieswithChildreninShelter=8
+AdultsinFamilieswithChildreninShelter=9
+ChildreninFamilieswithChildreninShelter=10
+TotalIndividualsinFamilieswithChildreninShelter=11
+AdultFamiliesinShelter=12
+IndividualsinAdultFamiliesinShelter=13
 
