@@ -91,3 +91,17 @@ f.writelines(name,add,phone)
 f.close()
 if name=’’:
     break
+
+Answer:
+while True:
+    print ("Enter your name, address, and phone please.")
+    name = input("Your name")
+    addr = input("Your address")
+    phone=input("Your phone")
+    entry=(name+addr+phone)
+    if name=='':
+            break
+    f = open("xtextfile.txt",'a')
+    
+    f.writelines(entry+'\n')
+    f.close()
