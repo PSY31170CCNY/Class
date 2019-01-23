@@ -1,0 +1,56 @@
+#blackjack.py
+from random import shuffle
+cards = []
+suits= ["joker", "jack", "clubs", "diamonds",]
+numbers=["Queen", "Hearts", "King", "Spades", "10", "9", "8", "7", "6", "5", "4", "3", "2"]
+for suit in range (len(suits)):
+    for num in range(len(numbers)):
+        cards.append((numbers[num], " of ", suits [suit]))
+print (cards)
+
+shuffle (cards)
+
+gameover = False
+startcard = 0
+while not gameover:
+    if startcard > 30:
+        print ("Game over! player won", playerwins, \
+               "hands and lost", playerloses)
+    
+        gameover= True
+        break
+    playerhand = cards [startedcard:startcard+3]
+    startcard + 3 # or +=1
+    print ( "This is your startinghand: ", playerhand)
+    if countup (playerhand) == 20
+        # player wins!!
+        print ("congratulations, you win!")
+        continue
+    hitme= 'y'
+    while hitme me  not in ["YyNn"]:
+        hit me= input (" Another card? Y/N")
+        if hit me not in 'YyNn'
+            print (" enter y or N")
+                  if hit me in "Yy":
+                  playerhand.append(cards[startcard])
+                  startcard +=1 #or startcard = startcard + 1
+                  print (playerhand)
+                  total > 20:
+                      # player loses
+                      print ("you lost.")
+                      playerloses +=1
+                      break
+            if total >= 20:
+                gameover = False
+                continue
+        # see who won
+        playertot = count (playerhand)
+    dealertot = count (dealerhand)
+    if playertot > dealertot:
+      print ("player wins with total count of", \
+             playercount, "greater than dealer's, dealerscount)
+
+             else:
+                 print("Player loses with ",playercount,\
+" less than dealer's",dealercount) 
+            
