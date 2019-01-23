@@ -1,3 +1,6 @@
+#Assignment 2
+#Create a blackjack game
+
 from random import shuffle
 
 def countup(hand):
