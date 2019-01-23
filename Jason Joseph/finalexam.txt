@@ -36,10 +36,10 @@ Answer
 z= True
 y=1
 while z:
-    y=y+10
-    if y = 100:
-        z=false
-print(y)
+    y+=1
+    if y == 100:
+        z=False
+print(y+1)
 
 
 
