@@ -71,8 +71,7 @@ def countup(housdict, borough=2):
         return housdict
 tentcase = countup(Tenant,borough)
 HPDcase = countup( HPD,borough)
-
-f.open(datafile,/r)    
+  
 
 
 
