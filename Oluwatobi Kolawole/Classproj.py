@@ -1,5 +1,6 @@
 #classproject.py
 #this is an analysis of Housing Litigations 
+#download from:https://data.cityofnewyork.us/Housing-Development/Housing-Litigations/59kj-x8nc
 import csv
 litid = 0 #Litigationid has a unique id
 bldg = 1 #Building id
