@@ -1,0 +1,71 @@
+#What is the need of the program that I am writing for this data?
+#Comparing the number of Graduation Rate in different schools in NYC
+#Which school had higher Graduation Rate?
+
+
+#2017_highschool.csv
+import csv
+file="C:\Users\rbrito000\Desktop/2017_high school.csv"
+
+        
+DBN=1 # year the data was taken
+school=2 # school name
+borough=4 # location
+graduation rate = 38
+
+
+
+#dictionary creation with the school as the key for the subsequent scores
+
+with open("2017_highschool.csv",newline='') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+    school={}#dictionary to access SAT data by the school 
+    for row in csvreader:
+        school[row[1]]={'notest':row[2],'reading':row[3],'math':row[4],'writing':row[5]} #defining the key as the school name and the different SAT scores
+        
+  
+#object creation  
+class SATDATA:
+     def __init__(self,DBN='', school='', notest='',reading = '',\
+                 math='',writing=''):
+
+         self.DBN= DBN
+         self.school= school
+         self.borough= borough
+         self.graduationrate= graduation rate
+#CENTRAL PARK EAST HIGH SCHOOL
+        #HIGH SCHOOL OF GRAPHIC COMMUNICATION ARTS
+#interface for the user to call the data up and compare values
+         
+start=input("Would you like to compare the graduation rate of different schools? (Y/N)")
+
+if start == "Y":
+    x=input("Cool which boroguh rate would you like to look at? Manhattan/Bronx/Queens")
+    if x == "Manhattan":
+        manhattan1=input("What is the first school you would like to choose?")
+        print(school[manhattan1]["manhattan"])
+        math2=input("What is the second school you would like to choose?")
+        print(school[bronx2]["bronx"])
+    elif x == "Bronx":
+        write1=input("What is the thirds school you would like to choose?")
+        print(school[queens1]["queens"])
+
+    
+elif start== "N":
+    print("Next time then")
+
+tallyup=input("Would you like to know the averaget total graduation rate for each school? (Y/N)")
+if tallyup == "Y":
+    totalavg=(input("What school average total would you like to compute?"))
+    intmath=int(school[totalavg]["manhattan"])
+    intwrite=int(school[totalavg]["bronx"])
+    intread=int(school[totalavg]["queens"])
+    inttotal=int(intmanhattan+intbronx+intqueens)
+    print(school[totalavg]["manhattan"], school[totalavg]["bronx"], school[totalavg]["queens"],"=",inttotal)
+
+elif tallyup == "N":
+    print("Alrighty!")
+              
+    
+
+       
