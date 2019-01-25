@@ -1,0 +1,17 @@
+#2.  initialize p correctly so it prints 10
+p= ???
+for x in range(3):
+	p = p + x
+print(p)
+
+The answer is to set p = 7
+
+The code demonstrating this works is on the next few lines.
+
+
+p=7
+for x in range(3):
+	p = p + x
+print(p)
+
+#ADS
