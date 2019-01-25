@@ -1,0 +1,6 @@
+#Final exam #1
+
+s=27
+t=1
+print('s + t = ',s+t)
+
