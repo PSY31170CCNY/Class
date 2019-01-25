@@ -1,0 +1,18 @@
+4. Using these variables with the built-in string function str.upper()
+and string slicing,  put an expression into the print statement that 
+outputs exactly this:
+
+  The quick brown fox jumps over the lazy dog named Rover
+s="the quick brown"
+f=['animal', 'fox', 'puppy']
+j='jumps over "Rover" the lazy dog'
+
+print(str.upper(s[0])
+      +str.lower(s[1:len(s)])
+      +s[3]+f[1]+s[3]
+      +j[0:10]
+      +j[-13:]
+      +s[3]+s[14]+j[-7]+j[2]+s[2]+j[-3]+s[3]
+      +j[12:17])
+
+  
