@@ -1,0 +1,18 @@
+#Fix this expression without changing any numbers,so x evaluates to 28:
+x = 7 * 2  **2
+
+
+# While the answer may APPEAR TO BE to do nothing, 
+# as x will evaluate to 28 anyway, this only occurs
+# because 2x2 = 2^2 = 4.
+# For the majority of numbers, however, it would
+# be necessary to eliminate one of the asterisks from the double asterisk
+# to obtain
+# x = 7 * 2 * 2, 
+# because ** means exponentiation in python. 
+#Also, the expression was indented.  So I needed to de-indent it.
+#The corrected expression appears in my code on the next line.""")
+
+x = 7 * 2 * 2
+
+#ADS
