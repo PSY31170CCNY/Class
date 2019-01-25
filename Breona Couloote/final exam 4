@@ -1,0 +1,8 @@
+#final exam 4
+
+s="the quick brown"
+f="animal"
+x="fox"
+p="puppy"
+j='jumps over "Rover" the lazy dog'
+print('s+x+j are:',s,x,j)
