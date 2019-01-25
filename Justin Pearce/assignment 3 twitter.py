@@ -1,3 +1,4 @@
+#puts tweets in csv file and reads through it
 e=open('saved_tweetsTrump.csv','a')
 columnTitleRow = '"'+x+'", "' +l+'", "'+ w+"\n"
 e.write(columnTitleRow)
@@ -6,9 +7,14 @@ w=e.readlines()
 
 x= input('welcome type in word to search text')
 print(x)
-
-
-
+#displays tweets from string requested
+with open(datafile, newline='') as csvfile:
+datareader = csv.reader(csvfile,delimiter = ',', quotechar='|')
+n+=1
+        try:
+            print(n,row)
+        except Exception as e:
+print(n,'failed due to ',str(e))
 
 for tweettext in alltext:
     try:
@@ -21,4 +27,6 @@ for tweettext in alltext:
 
     # if the try block worked, do whatever tweettext[x] needs to have done, e.g.
     print('asdf appears at position ',x, ' in ',tweettext)
+    
+
     
