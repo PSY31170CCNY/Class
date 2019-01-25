@@ -1,0 +1,28 @@
+#How I actually did problem 4
+
+s='the quick brown'
+f=['animal', 'fox', 'puppy']
+j='jumps over "Rover" the lazy dog'
+
+
+a = str.upper(s[0])
+b = str.lower(s[1:len(s)])
+c = s[3]+f[1]+s[3]
+d = j[0:10]
+e = j[-13:]
+f = s[3]+s[14]+j[-7]+j[2]+s[2]+j[-3]+s[3]
+g = j[12:17]
+
+
+x = a+b+c+d+e+f+g
+
+print(x)
+
+#and then you edit it down to this 
+#str.upper(s[0])
+#+str.lower(s[1:len(s)])
+#+s[3]+f[1]+s[3]
+#+j[0:10]
+#+j[-13:]
+#+s[3]+s[14]+j[-7]+j[2]+s[2]+j[-3]+s[3]
+#+j[12:17]
