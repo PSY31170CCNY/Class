@@ -1,0 +1,31 @@
+#trump tweets
+import csv
+#importing the save Trumps tweets
+datafile="saved_tweets.csv"
+#file that data was saved in
+
+credentials={}
+credentials['CONSUMER_KEY']="W9bKVqoG4OdWEPZAVFhfaMFWD"
+credentials['CONSUMER_SECRET']="jDRHojSQPgnIFqXBbpk17dgUCGt9aUpvp1faGeHv3rK67zxKav"
+credentials['ACCESS_TOKEN']="1085610961577361409-Mb5r5BHMG3gV2iZfCSZVkisoU2fcef"
+credentials['ACCESS_SECRET']="8OdVetZkIF9XtkBKln8lD0EiC6YIfb1z0ldPYsKcXtcWT"
+
+#the credentials were taken from the app I created from the Twitter API
+
+with open("saved_tweets.csv", "r") as file:
+    csv.dump(credentials, file)
+#my csv will not open even though the file and the location is correct 
+
+python_tweets=Twython('W9bKVqoG4OdWEPZAVFhfaMFWD', 'jDRHojSQPgnIFqXBbpk17dgUCGt9aUpvp1faGeHv3rK67zxKav')
+
+query={'q': 'learn python','result_type':'popular','count':10,'lang':'en'}
+
+def process_tweet(tweet):
+    d = {}
+    d['hashtags'] = [hashtag['text'] for hashtag in tweet['entities']['hashtags']]
+    d['text'] = tweet['text']
+    d['user'] = tweet['user']['screen_name']
+    d['user_loc'] = tweet['user']['location']
+    return d
+
+    
