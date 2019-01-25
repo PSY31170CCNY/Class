@@ -1,0 +1,9 @@
+#final exam 5
+
+import csv
+
+datafile="data.csv"
+
+with open(datafile, newline='') as csvfile:
+    datareader = csv.reader(csvfile,delimiter = ',', quotechar='|')
+    
