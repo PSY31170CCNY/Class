@@ -1,0 +1,13 @@
+#final exam 6
+
+while True:
+    print('Enter your name, address and phone, please')
+f = open("textfile.txt", 'w')
+name = input('Your name')
+addr = input('Your address')
+phone= input ('Your phone')
+f.writelines(name,addr,phone)
+f.close()
+if name ='':
+    break
+#i've tried enetering this code so i can send the text file, however I can't get passed this syntax error  
