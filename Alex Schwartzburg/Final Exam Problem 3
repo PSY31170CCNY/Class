@@ -1,0 +1,22 @@
+3.  Fix the syntax and logic errors in this code snippet so it prints 101
+z= true
+y=1
+while z:
+    y+=10
+    if y = 100:
+        z=false
+print(y)
+
+
+
+The requested code will appear thus:
+
+z = True
+y = 1
+while z:
+    y += 1
+    print(y)
+    if y == 101:
+        z = False
+        
+    #ADS
