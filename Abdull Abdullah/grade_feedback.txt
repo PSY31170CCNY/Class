@@ -1,9 +1,12 @@
-The NYC data project isn't done - an NYC database to be processed
+The NYC data project isn't done - you have a python file 
+that is an NYC database to be processed
 but it only gets read in, not taken apart and analyzed.
 What is the research question you are answering?
+There are no comment lines to document where you got the data file,
+which the assignment requests.
 
 In your blackjack program the countup function always returns 0.
-there is no return command, and the final else is missing a colon 
-and has nothing to do after the else. The last line returns 0, 
-but it looks like it should return total
+There are no return commands except the last line,
+and the final else is missing a colon and has nothing to do after the else. 
+The last line returns 0, but it looks like it should return total
 Did you actually run it?
