@@ -1,0 +1,11 @@
+For the final project I decided to view the available data on the OpenData website on 
+drinking fountains in New York Cit parks. 
+To do so, I went to NYC Open Data and found something that would be interesting to consider: 
+Drinking Fountains.
+At https://data.cityofnewyork.us/Environment/Drinking-Fountains/ph76-k6qa
+I was able to download a CSV for Excel file that listed location, names, details and the amount of 
+drinking fountains available at the site. 
+By implementing Python, several doors open that may let us organize data from spreadsheets and 
+paste them upon documents. 
+For example, one question one might want to know about fountains in NYC parks is, 
+"Which borough has the most amount of park water fountains?"
