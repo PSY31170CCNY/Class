@@ -94,5 +94,5 @@ while name != 'Q':
 ## i was able to determine that the libraries in queens open on a 
 #  sunday are Central Library, Cyber center, flushing, job information center,
 #  and kew gardens hills. i can also search and see if a particular library name listed
-#  in the data is open or closed on sundays. 
+#  in the data is open or closed on sundays along with it's phone number and address. 
         
