@@ -1,1 +1,3 @@
-The NYC data project isn't done - there's no NYC database being processed
+The NYC data project isn't done - an NYC database to be processed
+but it only gets read in, not taken apart and analyzed.
+What is the research question you are answering?
