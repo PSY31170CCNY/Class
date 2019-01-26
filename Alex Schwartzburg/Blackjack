@@ -1,0 +1,171 @@
+#Blackjack
+
+import random
+
+class Card:
+    def __init__(self,value,suit):
+        self.value = value
+        self.suit = suit
+
+def countup(hand=[]):
+    ace=False
+    total = 0
+    x = slice(1)
+    for card in hand:
+        # e.g. hand[card] could be ('Queen', ' of ', 'diamonds')        
+        CardValue = {'A': 0,
+                     '2' : 2,
+                     '3' : 3,
+                     '4' : 4,
+                     '5' : 5,
+                     '6' : 6,
+                     '7' : 7,
+                     '8' : 8,
+                     '9' : 9,
+                     '10': 10,
+                     'J' : 10,
+                     'Q' : 10,
+                     'K' : 10}        
+        cardnum = CardValue[card[x]]
+        if cardnum != 'A':
+            num = cardnum   #stuck here, but the point is I need to call the
+            num = 0
+            ace = True
+        else:
+            num = cardnum
+        total = total + num
+        if ace and total > 10:
+            total = total + 1
+        else:
+            total = total + 11
+    return total
+        
+    # -- return count of cards in a hand
+
+    return 0
+
+
+#The blackjack assignment is there to allow you to take several smaller
+#programming problems and connect them into a larger program:
+
+#√ 1    Create the deck: use python lists and strings to create the list of
+#       cards programmatically with a loop inside a loop (as opposed to typing
+#       the literal 52 cards by hand) using the example code in blackjack.py.
+#√  2     Deal the cards: use a loop within which each hand is dealt, and an
+#       inner loop that deals a hand to the player, with a conditional that
+#        decides whether to deal another card or end the inner loop.
+#  3   Tally the score: the final tallying of the score of each hand
+#       requires a bit of logic to process multiple Aces, but that is spelled
+#       out in detail in the assignment.
+#    RUNNING INTO TROUBLE WITH 3.
+
+
+
+
+
+
+suits = ['♠',
+         '♥',
+         '♦',
+         '♣']
+
+cards = ['A',
+         'K',
+         'Q',
+         'J',
+         '10',
+         '9',
+         '8',
+         '7',
+         '6',
+         '5',
+         '4',
+         '3',
+         '2']
+
+CardValue = {'A': 0,
+             '2' : 2,
+             '3' : 3,
+             '4' : 4,
+             '5' : 5,
+             '6' : 6,
+             '7' : 7,
+             '8' : 8,
+             '9' : 9,
+             '10': 10,
+             'J' : 10,
+             'Q' : 10,
+             'K' : 10}
+    
+deck = []
+
+playerwins=0
+playerlosses =0
+
+for y in suits:
+    for x in cards:
+        deck.append(x+','+y)
+
+random.shuffle(deck)
+
+for card in cards:
+    startcard = deck.index(deck[0])
+
+gameover = False
+while gameover == False:
+    if startcard > 48:  #we needed the number of the startcard, not a string :) 
+        print("Game over! You win", playerwins, "hands and lost ", playerlosses)
+        gameover = True
+        break
+    playerhand = deck[startcard:startcard+2]
+    dealerhand = []
+    print("here is your hand: ", playerhand)
+    if countup(playerhand) == 21:
+        print("You win!")
+        playerwins +=1
+        dealerhand = deck[startcard:startcard+2]   #string
+        startcard = startcard+2
+        continue
+    hitme='x'
+    while hitme not in "YyNn":
+        hitme = input("Another card? Y/N")
+        if hitme not in 'YyNn':
+            print("Please type a valid response. Thank you!")
+            continue
+        print("Thank you! hitme is",hitme)
+        print("is hitme in Yy?", hitme in "Yy") #this latter part of the string may be a bug
+        if hitme in "Yy":
+            playerhand.append(deck[startcard])
+            startcard +=1      
+            print(playerhand)
+            total = countup(playerhand)
+            if total > 21:    
+                print("You lost. ")
+                playerlosses +1
+                break
+            if total == 21:
+                print("You win!")
+                break
+            else:
+                print("hitme ",hitme, " not in YyNn:",(hitme not in 'YyNn')) # another bug
+                total = countup(playerhand)  #is this supposed to be here?
+            if total >=21:
+                gameover = True   #another bug false should be true
+                continue
+    dealerhand.append(deck[startcard:startcard+2])
+    
+    
+    playertot = countup(playerhand)
+    dealertot = countup(dealerhand)
+    if playertot > dealertot:
+        print("You win! You've won with ",playertot,\
+              " which is greater than dealer's hand of",\
+              dealertot,"! Believe in yourself!")
+    else:
+        print("Your hand is ",playertot,\
+              " which is less than dealer's ",\
+              dealertot,"You lose!")
+    
+
+
+
