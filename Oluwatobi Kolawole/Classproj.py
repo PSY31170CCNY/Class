@@ -33,7 +33,7 @@ class Housing:
            self.casedate = casedate
           
            
-## This is a comparison between the number of violations filed by Tenants and HPD in Broolyn
+## This is a comparison between the number of violations filed by Tenants and HPD in each of the five boroughs
 Tenant = [[],[],[],[],[],[]]# cases issued by tenants against their landlords
 HPD = [[],[],[],[],[],[]]# cases issued by HPD against landlords for outstanding building violations 
 datafile = '/Users/okolawo000/Desktop/Housing_Litigations.csv'
@@ -68,6 +68,7 @@ for b in range(len(Tenant)):
 Hpdcount=len(HPD)
 for h in range(len(HPD)):
     totHpdcount += len(HPD[h])
+print(tottencount)
 
     
 
