@@ -10,5 +10,3 @@ There are no return commands except the last line,
 and the final else is missing a colon and has nothing to do after the else. 
 The last line returns 0, but it looks like it should return total
 Did you actually run it?
-
-You don't have assignments 1 and 2 
